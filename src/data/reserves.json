@@ -1,0 +1,51 @@
+[
+  {
+    "id": "hirschfelden",
+    "name": "Hirschfelden Hunting Reserve",
+    "location": "Germany",
+    "description": "Modeled after German farmlands, Hirschfelden offers a diverse landscape of forests, fields, and lakes. This reserve provides excellent opportunities for hunting European species in a picturesque setting.",
+    "size": "25 km²",
+    "terrain": "Farmlands, forests, lakes",
+    "featured_species": [
+      "Red Deer",
+      "Roe Deer",
+      "Wild Boar",
+      "European Hare",
+      "Red Fox"
+    ],
+    "dlc_required": false
+  },
+  {
+    "id": "layton-lake",
+    "name": "Layton Lake District",
+    "location": "Pacific Northwest, USA",
+    "description": "Inspired by the Pacific Northwest, Layton Lake District features dense coniferous forests, rolling hills, and pristine lakes. A perfect hunting ground for North American big game.",
+    "size": "25 km²",
+    "terrain": "Coniferous forests, lakes, mountains",
+    "featured_species": [
+      "Roosevelt Elk",
+      "Blacktail Deer",
+      "Black Bear",
+      "Coyote",
+      "Canada Goose"
+    ],
+    "dlc_required": false
+  },
+  {
+    "id": "medved-taiga",
+    "name": "Medved-Taiga National Park",
+    "location": "Siberia, Russia",
+    "description": "Based on the Siberian taiga, Medved-Taiga offers a challenging hunting experience in harsh, cold environments. Track dangerous predators and hardy prey through snow-covered forests.",
+    "size": "25 km²",
+    "terrain": "Taiga forests, frozen lakes, snow",
+    "featured_species": [
+      "Brown Bear",
+      "Eurasian Lynx",
+      "Wild Boar",
+      "Moose",
+      "Reindeer"
+    ],
+    "dlc_required": true
+  }
+]
+

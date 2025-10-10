@@ -1,0 +1,43 @@
+import { Link } from 'react-router-dom';
+
+function Card({ title, description, link, badge, details }) {
+  return (
+    <div className="bg-hunter-dark rounded-lg shadow-lg overflow-hidden hover:shadow-2xl transition-shadow duration-300 border border-hunter-brown">
+      <div className="p-6">
+        <div className="flex justify-between items-start mb-3">
+          <h3 className="text-xl font-bold text-hunter-tan">{title}</h3>
+          {badge && (
+            <span className="px-3 py-1 text-xs font-semibold rounded-full bg-hunter-green text-white">
+              {badge}
+            </span>
+          )}
+        </div>
+        
+        <p className="text-gray-300 mb-4 line-clamp-3">{description}</p>
+        
+        {details && details.length > 0 && (
+          <div className="space-y-2 mb-4">
+            {details.map((detail, index) => (
+              <div key={index} className="flex items-center text-sm text-gray-400">
+                <span className="mr-2 text-hunter-green-light">•</span>
+                {detail}
+              </div>
+            ))}
+          </div>
+        )}
+        
+        {link && (
+          <Link
+            to={link}
+            className="inline-block mt-4 px-4 py-2 bg-hunter-green-light text-white rounded hover:bg-hunter-green transition-colors duration-200"
+          >
+            Learn More
+          </Link>
+        )}
+      </div>
+    </div>
+  );
+}
+
+export default Card;
+
