@@ -9,9 +9,15 @@
     "featured_species": [
       "Red Deer",
       "Roe Deer",
+      "Fallow Deer",
       "Wild Boar",
       "European Hare",
-      "Red Fox"
+      "European Rabbit",
+      "Red Fox",
+      "European Bison",
+      "Ring-Necked Pheasant",
+      "Mallard",
+      "Greylag Goose"
     ],
     "dlc_required": false
   },
@@ -25,9 +31,13 @@
     "featured_species": [
       "Roosevelt Elk",
       "Blacktail Deer",
+      "Whitetail Deer",
       "Black Bear",
       "Coyote",
-      "Canada Goose"
+      "Canada Goose",
+      "Merriam Turkey",
+      "Mallard",
+      "Harlequin Duck"
     ],
     "dlc_required": false
   },
@@ -43,9 +53,13 @@
       "Eurasian Lynx",
       "Wild Boar",
       "Moose",
-      "Reindeer"
+      "Reindeer",
+      "Eurasian Wigeon",
+      "Black Grouse",
+      "Hazel Grouse",
+      "Tundra Bean Goose",
+      "Eurasian Teal"
     ],
     "dlc_required": true
   }
 ]
-
