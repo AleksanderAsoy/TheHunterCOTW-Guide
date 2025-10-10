@@ -32,11 +32,34 @@ function ReserveDetail() {
 
   return (
     <div className="min-h-screen bg-hunter-darker">
-      <Hero
-        title={reserve.name}
-        subtitle={reserve.location}
-        backgroundClass="bg-gradient-to-r from-hunter-green to-hunter-brown"
-      />
+      {/* Hero Image Section */}
+      {reserve.image && (
+        <div className="relative h-96 overflow-hidden">
+          <img 
+            src={reserve.image} 
+            alt={reserve.name}
+            className="w-full h-full object-cover"
+          />
+          <div className="absolute inset-0 bg-gradient-to-b from-transparent via-hunter-darker/50 to-hunter-darker"></div>
+          <div className="absolute inset-0 flex items-center justify-center">
+            <div className="text-center">
+              <h1 className="text-5xl md:text-7xl font-bold text-white mb-4 drop-shadow-lg">
+                {reserve.name}
+              </h1>
+              <p className="text-2xl md:text-3xl text-hunter-tan drop-shadow-lg">
+                {reserve.location}
+              </p>
+            </div>
+          </div>
+        </div>
+      )}
+      {!reserve.image && (
+        <Hero
+          title={reserve.name}
+          subtitle={reserve.location}
+          backgroundClass="bg-gradient-to-r from-hunter-green to-hunter-brown"
+        />
+      )}
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
         {/* Back Button */}

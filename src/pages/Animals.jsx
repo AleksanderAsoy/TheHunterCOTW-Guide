@@ -79,6 +79,7 @@ function Animals() {
                 title={animal.name}
                 description={animal.description}
                 badge={`Class ${animal.class}`}
+                image={animal.image}
                 details={[
                   `Scientific Name: ${animal.latin_name}`,
                   `Weight: ${animal.weight_range}`,

@@ -39,6 +39,7 @@ function Reserves() {
                 title={reserve.name}
                 description={reserve.description}
                 badge={reserve.dlc_required ? 'DLC' : 'Base Game'}
+                image={reserve.image}
                 details={[
                   `Location: ${reserve.location}`,
                   `Size: ${reserve.size}`,

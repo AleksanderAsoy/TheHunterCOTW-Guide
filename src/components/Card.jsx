@@ -1,12 +1,27 @@
 import { Link } from 'react-router-dom';
 
-function Card({ title, description, link, badge, details }) {
+function Card({ title, description, link, badge, details, image }) {
   return (
-    <div className="bg-hunter-dark rounded-lg shadow-lg overflow-hidden hover:shadow-2xl transition-shadow duration-300 border border-hunter-brown">
-      <div className="p-6">
+    <div className="bg-hunter-dark rounded-lg shadow-lg overflow-hidden hover:shadow-2xl transition-shadow duration-300 border border-hunter-brown flex flex-col h-full">
+      {image && (
+        <div className="relative h-48 overflow-hidden">
+          <img 
+            src={image} 
+            alt={title}
+            className="w-full h-full object-cover transition-transform duration-300 hover:scale-110"
+            loading="lazy"
+          />
+          {badge && (
+            <span className="absolute top-3 right-3 px-3 py-1 text-xs font-semibold rounded-full bg-hunter-green text-white shadow-lg">
+              {badge}
+            </span>
+          )}
+        </div>
+      )}
+      <div className="p-6 flex flex-col flex-grow">
         <div className="flex justify-between items-start mb-3">
           <h3 className="text-xl font-bold text-hunter-tan">{title}</h3>
-          {badge && (
+          {!image && badge && (
             <span className="px-3 py-1 text-xs font-semibold rounded-full bg-hunter-green text-white">
               {badge}
             </span>
@@ -29,7 +44,7 @@ function Card({ title, description, link, badge, details }) {
         {link && (
           <Link
             to={link}
-            className="inline-block mt-4 px-4 py-2 bg-hunter-green-light text-white rounded hover:bg-hunter-green transition-colors duration-200"
+            className="inline-block mt-auto px-4 py-2 bg-hunter-green-light text-white rounded hover:bg-hunter-green transition-colors duration-200"
           >
             Learn More
           </Link>
