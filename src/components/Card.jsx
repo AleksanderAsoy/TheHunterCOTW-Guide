@@ -20,9 +20,9 @@ function Card({ title, description, link, badge, details, image }) {
       )}
       <div className="p-6 flex flex-col flex-grow">
         <div className="flex justify-between items-start mb-3">
-          <h3 className="text-xl font-bold text-hunter-tan">{title}</h3>
+          <h3 className="text-xl font-bold text-hunter-tan flex-1 pr-2">{title}</h3>
           {!image && badge && (
-            <span className="px-3 py-1 text-xs font-semibold rounded-full bg-hunter-green text-white">
+            <span className="px-3 py-1 text-xs font-semibold rounded-full bg-hunter-green text-white whitespace-nowrap flex-shrink-0">
               {badge}
             </span>
           )}
