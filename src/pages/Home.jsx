@@ -8,6 +8,7 @@ function Home() {
       <Hero
         title="TheHunter: Call of the Wild"
         subtitle="Your comprehensive guide to mastering the ultimate hunting experience"
+        backgroundClass="bg-gradient-to-br from-hunter-green via-hunter-brown-light to-hunter-amber"
       />
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">

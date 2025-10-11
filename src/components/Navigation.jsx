@@ -10,7 +10,7 @@ function Navigation() {
         <div className="flex justify-between items-center h-16">
           {/* Logo */}
           <Link to="/" className="flex items-center space-x-2">
-            <span className="text-2xl font-bold text-hunter-green-light">
+            <span className="text-2xl font-bold text-hunter-green-accent">
               TheHunter
             </span>
             <span className="text-2xl font-bold text-hunter-tan">
@@ -22,25 +22,25 @@ function Navigation() {
           <div className="hidden md:flex space-x-8">
             <Link
               to="/"
-              className="text-gray-300 hover:text-hunter-green-light transition-colors duration-200 font-medium"
+              className="text-gray-300 hover:text-hunter-green-accent transition-colors duration-200 font-medium"
             >
               Home
             </Link>
             <Link
               to="/reserves"
-              className="text-gray-300 hover:text-hunter-green-light transition-colors duration-200 font-medium"
+              className="text-gray-300 hover:text-hunter-green-accent transition-colors duration-200 font-medium"
             >
               Reserves
             </Link>
             <Link
               to="/animals"
-              className="text-gray-300 hover:text-hunter-green-light transition-colors duration-200 font-medium"
+              className="text-gray-300 hover:text-hunter-green-accent transition-colors duration-200 font-medium"
             >
               Animals
             </Link>
             <Link
               to="/weapons"
-              className="text-gray-300 hover:text-hunter-green-light transition-colors duration-200 font-medium"
+              className="text-gray-300 hover:text-hunter-green-accent transition-colors duration-200 font-medium"
             >
               Weapons
             </Link>
