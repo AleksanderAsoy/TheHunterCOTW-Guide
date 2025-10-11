@@ -8,7 +8,6 @@ function Home() {
       <Hero
         title="TheHunter: Call of the Wild"
         subtitle="Your comprehensive guide to mastering the ultimate hunting experience"
-        backgroundClass="bg-hunter-orange"
       />
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
@@ -98,6 +97,72 @@ function Home() {
                 Animals follow daily routines with feeding, drinking, and resting zones.
                 Learn these patterns for successful hunts.
               </p>
+            </div>
+          </div>
+        </section>
+
+        {/* Featured Reserve Spotlight */}
+        <section className="mt-16 mb-16">
+          <h2 className="text-3xl font-bold text-hunter-tan mb-8 text-center">
+            Featured Reserve
+          </h2>
+          <div className="bg-hunter-dark rounded-lg overflow-hidden border border-hunter-brown shadow-lg">
+            <div className="relative h-64 bg-gradient-to-r from-hunter-brown to-hunter-brown-light flex items-center justify-center">
+              <div className="text-center text-white z-10">
+                <h3 className="text-4xl font-bold mb-2">Askiy Ridge</h3>
+                <p className="text-xl text-hunter-tan">Alberta's Breathtaking Wilderness</p>
+              </div>
+              <div className="absolute inset-0 bg-black opacity-30"></div>
+            </div>
+            <div className="p-8">
+              <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div>
+                  <h4 className="text-lg font-semibold text-orange-500 mb-3">Reserve Stats</h4>
+                  <div className="space-y-2">
+                    <div className="flex justify-between text-sm">
+                      <span className="text-gray-400">Size:</span>
+                      <span className="text-hunter-tan">25 km²</span>
+                    </div>
+                    <div className="flex justify-between text-sm">
+                      <span className="text-gray-400">Animals:</span>
+                      <span className="text-hunter-tan">19 Species</span>
+                    </div>
+                    <div className="flex justify-between text-sm">
+                      <span className="text-gray-400">Difficulty:</span>
+                      <span className="text-orange-500">Expert Challenge</span>
+                    </div>
+                  </div>
+                </div>
+                <div>
+                  <h4 className="text-lg font-semibold text-orange-500 mb-3">Featured Species</h4>
+                  <div className="space-y-2">
+                    <div className="flex items-center">
+                      <span className="text-orange-500 mr-2">•</span>
+                      <span className="text-gray-300">Grizzly Bear (Class 9)</span>
+                    </div>
+                    <div className="flex items-center">
+                      <span className="text-orange-500 mr-2">•</span>
+                      <span className="text-gray-300">Moose (Class 7)</span>
+                    </div>
+                    <div className="flex items-center">
+                      <span className="text-orange-500 mr-2">•</span>
+                      <span className="text-gray-300">Elk (Class 6)</span>
+                    </div>
+                  </div>
+                </div>
+                <div>
+                  <h4 className="text-lg font-semibold text-orange-500 mb-3">Why Hunt Here?</h4>
+                  <p className="text-gray-300 text-sm leading-relaxed">
+                    Experience the newest and most challenging reserve! Face dangerous Grizzly Bears, hunt massive Moose, and explore Alberta's stunning snowy wilderness with 19 species and exclusive missions.
+                  </p>
+                  <Link
+                    to="/reserves/askiy-ridge"
+                    className="inline-block mt-4 px-4 py-2 bg-orange-500 text-white rounded hover:bg-orange-600 transition-colors duration-200 text-sm"
+                  >
+                    Explore Reserve
+                  </Link>
+                </div>
+              </div>
             </div>
           </div>
         </section>

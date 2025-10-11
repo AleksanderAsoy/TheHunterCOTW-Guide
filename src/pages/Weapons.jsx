@@ -6,7 +6,6 @@ function Weapons() {
       <Hero
         title="Weapons Arsenal"
         subtitle="Master your tools for the perfect hunt"
-        backgroundClass="bg-hunter-orange"
       />
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
