@@ -1,27 +1,49 @@
+/**
+ * ReserveDetail Page Component
+ * 
+ * Displays detailed information about a specific hunting reserve.
+ * The reserve ID is extracted from the URL parameter.
+ * 
+ * Content includes:
+ * - Hero section with reserve name and location
+ * - Overview with full description
+ * - Quick Facts sidebar (size, terrain, DLC status)
+ * - Featured species list
+ * - Back button to return to reserves list
+ * 
+ * If reserve is not found, shows a 404-style error message.
+ */
+
 import { useParams, Link } from 'react-router-dom';
 import { useState, useEffect } from 'react';
 import Hero from '../components/Hero';
 import reservesData from '../data/reserves.json';
+import { CSS_CLASSES } from '../utils/constants';
 
 function ReserveDetail() {
+  // Extract reserve ID from URL (e.g., /reserves/hirschfelden -> "hirschfelden")
   const { id } = useParams();
+  
+  // State to store the selected reserve
   const [reserve, setReserve] = useState(null);
 
+  // Find and load the reserve when component mounts or ID changes
   useEffect(() => {
     const foundReserve = reservesData.find(r => r.id === id);
     setReserve(foundReserve);
   }, [id]);
 
+  // Show error message if reserve not found
   if (!reserve) {
     return (
-      <div className="min-h-screen bg-hunter-darker flex items-center justify-center">
+      <div className={`${CSS_CLASSES.pageContainer} flex items-center justify-center`}>
         <div className="text-center">
           <h2 className="text-3xl font-bold text-hunter-tan mb-4">
             Reserve Not Found
           </h2>
           <Link
             to="/reserves"
-            className="text-orange-500 hover:text-hunter-tan transition-colors"
+            className={CSS_CLASSES.textLink}
           >
             Back to Reserves
           </Link>
@@ -31,8 +53,9 @@ function ReserveDetail() {
   }
 
   return (
-    <div className="min-h-screen bg-hunter-darker">
-      {/* Hero Image Section */}
+    <div className={CSS_CLASSES.pageContainer}>
+      
+      {/* Hero Section - Shows image if available, otherwise uses Hero component */}
       {reserve.image && (
         <div className="relative h-96 overflow-hidden">
           <img 
@@ -40,7 +63,10 @@ function ReserveDetail() {
             alt={reserve.name}
             className="w-full h-full object-cover"
           />
+          {/* Gradient overlay for text readability */}
           <div className="absolute inset-0 bg-gradient-to-b from-transparent via-hunter-darker/50 to-hunter-darker"></div>
+          
+          {/* Centered text over image */}
           <div className="absolute inset-0 flex items-center justify-center">
             <div className="text-center">
               <h1 className="text-5xl md:text-7xl font-bold text-white mb-4 drop-shadow-lg">
@@ -53,6 +79,8 @@ function ReserveDetail() {
           </div>
         </div>
       )}
+      
+      {/* Fallback to Hero component if no image */}
       {!reserve.image && (
         <Hero
           title={reserve.name}
@@ -61,12 +89,14 @@ function ReserveDetail() {
         />
       )}
 
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+      <div className={CSS_CLASSES.contentContainer}>
+        
         {/* Back Button */}
         <Link
           to="/reserves"
-          className="inline-flex items-center text-orange-500 hover:text-hunter-tan transition-colors mb-8"
+          className={`${CSS_CLASSES.textLink} inline-flex items-center mb-8`}
         >
+          {/* Arrow Left Icon */}
           <svg
             className="w-5 h-5 mr-2"
             fill="none"
@@ -81,69 +111,78 @@ function ReserveDetail() {
           Back to Reserves
         </Link>
 
-        {/* Reserve Information */}
+        {/* Main Content Grid: Description (2/3) and Quick Facts (1/3) */}
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
-          {/* Main Content */}
+          
+          {/* Left Column: Overview/Description (takes 2 columns on large screens) */}
           <div className="lg:col-span-2">
-            <section className="bg-hunter-dark rounded-lg p-8 border border-hunter-brown mb-8">
-              <h2 className="text-3xl font-bold text-hunter-tan mb-4">Overview</h2>
-              <p className="text-gray-300 text-lg leading-relaxed">
+            <section className={CSS_CLASSES.card}>
+              <h2 className={CSS_CLASSES.sectionHeadingLeft}>
+                Overview
+              </h2>
+              <p className={CSS_CLASSES.bodyText}>
                 {reserve.description}
               </p>
             </section>
+          </div>
 
-            {/* Featured Species */}
-            <section className="bg-hunter-dark rounded-lg p-8 border border-hunter-brown">
-              <h2 className="text-3xl font-bold text-hunter-tan mb-6">
-                Featured Species
+          {/* Right Column: Quick Facts Sidebar (takes 1 column on large screens) */}
+          <div className="lg:col-span-1">
+            <section className={CSS_CLASSES.card}>
+              <h2 className={CSS_CLASSES.sectionHeadingLeft}>
+                Quick Facts
               </h2>
-              <div className="grid grid-cols-2 gap-4">
-                {reserve.featured_species.map((species, index) => (
-                  <div
-                    key={index}
-                    className="flex items-center p-3 bg-hunter-darker rounded-lg"
-                  >
-                    <span className="text-orange-500 mr-3 text-xl">•</span>
-                    <span className="text-gray-300">{species}</span>
-                  </div>
-                ))}
+              <div className="space-y-4">
+                {/* Size */}
+                <div>
+                  <h3 className="text-sm font-semibold text-gray-400 mb-1">Size</h3>
+                  <p className="text-hunter-tan">{reserve.size}</p>
+                </div>
+                
+                {/* Terrain */}
+                <div>
+                  <h3 className="text-sm font-semibold text-gray-400 mb-1">Terrain</h3>
+                  <p className="text-hunter-tan">{reserve.terrain}</p>
+                </div>
+                
+                {/* DLC Status */}
+                <div>
+                  <h3 className="text-sm font-semibold text-gray-400 mb-1">Availability</h3>
+                  <span className={`inline-block px-3 py-1 text-sm font-semibold rounded-full ${
+                    reserve.dlc_required 
+                      ? 'bg-orange-500 text-white' 
+                      : 'bg-hunter-green text-white'
+                  }`}>
+                    {reserve.dlc_required ? 'DLC Required' : 'Base Game'}
+                  </span>
+                </div>
               </div>
             </section>
           </div>
-
-          {/* Sidebar */}
-          <div className="lg:col-span-1">
-            <div className="bg-hunter-dark rounded-lg p-6 border border-hunter-brown sticky top-20">
-              <h3 className="text-2xl font-bold text-hunter-tan mb-6">
-                Quick Facts
-              </h3>
-              <div className="space-y-4">
-                <div>
-                  <p className="text-gray-500 text-sm mb-1">Location</p>
-                  <p className="text-gray-300 font-medium">{reserve.location}</p>
-                </div>
-                <div>
-                  <p className="text-gray-500 text-sm mb-1">Size</p>
-                  <p className="text-gray-300 font-medium">{reserve.size}</p>
-                </div>
-                <div>
-                  <p className="text-gray-500 text-sm mb-1">Terrain</p>
-                  <p className="text-gray-300 font-medium">{reserve.terrain}</p>
-                </div>
-                <div>
-                  <p className="text-gray-500 text-sm mb-1">Availability</p>
-                  <p className="text-gray-300 font-medium">
-                    {reserve.dlc_required ? 'DLC Required' : 'Base Game'}
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
         </div>
+
+        {/* Featured Species Section (full width below) */}
+        {reserve.featured_species && reserve.featured_species.length > 0 && (
+          <section className={`mt-8 ${CSS_CLASSES.card}`}>
+            <h2 className={CSS_CLASSES.sectionHeadingLeft}>
+              Featured Species
+            </h2>
+            <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+              {reserve.featured_species.map((species, index) => (
+                <div
+                  key={index}
+                  className="flex items-center p-3 bg-hunter-darker rounded-lg"
+                >
+                  <span className="text-orange-500 mr-3 text-xl">•</span>
+                  <span className="text-gray-300">{species}</span>
+                </div>
+              ))}
+            </div>
+          </section>
+        )}
       </div>
     </div>
   );
 }
 
 export default ReserveDetail;
-

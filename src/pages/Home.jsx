@@ -1,37 +1,55 @@
+/**
+ * Home Page Component
+ * 
+ * The main landing page for TheHunter: COTW Guide.
+ * 
+ * Sections:
+ * 1. Hero banner with title and subtitle
+ * 2. Welcome section with introduction text
+ * 3. "Explore the Guide" cards (Reserves, Animals, Weapons)
+ * 4. Quick Hunting Tips grid
+ * 5. Featured Reserve spotlight
+ * 6. About This Project section with GitHub link
+ */
+
 import { Link } from 'react-router-dom';
 import Hero from '../components/Hero';
 import Card from '../components/Card';
+import FeaturedReserve from '../components/FeaturedReserve';
+import { CSS_CLASSES } from '../utils/constants';
 
 function Home() {
   return (
-    <div className="min-h-screen bg-hunter-darker">
+    <div className={CSS_CLASSES.pageContainer}>
+      {/* Hero Section */}
       <Hero
         title="TheHunter: Call of the Wild"
         subtitle="Your comprehensive guide to mastering the ultimate hunting experience"
       />
 
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+      <div className={CSS_CLASSES.contentContainer}>
+        
         {/* Welcome Section */}
-        <section className="mb-16">
-          <h2 className="text-3xl font-bold text-hunter-tan mb-6">
+        <section className={CSS_CLASSES.section}>
+          <h2 className={CSS_CLASSES.sectionHeadingLeft}>
             Welcome to Your Hunting Adventure
           </h2>
-          <p className="text-gray-300 text-lg leading-relaxed mb-4">
+          <p className={`${CSS_CLASSES.bodyText} mb-4`}>
             TheHunter: Call of the Wild is an immersive hunting simulation that offers
             players a realistic and expansive experience across stunning open-world reserves.
             This guide will help you navigate through the various reserves, understand animal
             behavior, choose the right weapons, and become a master hunter.
           </p>
-          <p className="text-gray-300 text-lg leading-relaxed">
+          <p className={CSS_CLASSES.bodyText}>
             Whether you're tracking a majestic Red Deer in Hirschfelden or facing the
             dangerous Brown Bear in Medved-Taiga, this guide has everything you need to
             succeed.
           </p>
         </section>
 
-        {/* Featured Sections */}
-        <section className="mb-16">
-          <h2 className="text-3xl font-bold text-hunter-tan mb-8 text-center">
+        {/* Explore the Guide - Navigation Cards */}
+        <section className={CSS_CLASSES.section}>
+          <h2 className={CSS_CLASSES.sectionHeading}>
             Explore the Guide
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
@@ -56,14 +74,15 @@ function Home() {
           </div>
         </section>
 
-        {/* Quick Tips */}
-        <section className="bg-hunter-dark rounded-lg p-8 border border-hunter-brown">
-          <h2 className="text-3xl font-bold text-hunter-tan mb-6">
+        {/* Quick Hunting Tips */}
+        <section className={CSS_CLASSES.card}>
+          <h2 className={CSS_CLASSES.sectionHeadingLeft}>
             Quick Hunting Tips
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+            {/* Tip 1: Tracking */}
             <div>
-              <h3 className="text-xl font-semibold text-orange-500 mb-3">
+              <h3 className={CSS_CLASSES.subheading}>
                 Track Carefully
               </h3>
               <p className="text-gray-300">
@@ -71,8 +90,10 @@ function Home() {
                 signs that can help you predict their location and behavior.
               </p>
             </div>
+
+            {/* Tip 2: Wind Direction */}
             <div>
-              <h3 className="text-xl font-semibold text-orange-500 mb-3">
+              <h3 className={CSS_CLASSES.subheading}>
                 Mind the Wind
               </h3>
               <p className="text-gray-300">
@@ -80,8 +101,10 @@ function Home() {
                 will flee if they catch your scent.
               </p>
             </div>
+
+            {/* Tip 3: Weapon Selection */}
             <div>
-              <h3 className="text-xl font-semibold text-orange-500 mb-3">
+              <h3 className={CSS_CLASSES.subheading}>
                 Choose the Right Weapon
               </h3>
               <p className="text-gray-300">
@@ -89,8 +112,10 @@ function Home() {
                 score integrity and ensuring ethical harvests.
               </p>
             </div>
+
+            {/* Tip 4: Need Zones */}
             <div>
-              <h3 className="text-xl font-semibold text-orange-500 mb-3">
+              <h3 className={CSS_CLASSES.subheading}>
                 Learn Need Zones
               </h3>
               <p className="text-gray-300">
@@ -102,70 +127,20 @@ function Home() {
         </section>
 
         {/* Featured Reserve Spotlight */}
-        <section className="mt-16 mb-16">
-          <h2 className="text-3xl font-bold text-hunter-tan mb-8 text-center">
-            Featured Reserve
-          </h2>
-          <div className="bg-hunter-dark rounded-lg overflow-hidden border border-hunter-brown shadow-lg">
-            <div className="relative h-64 bg-gradient-to-r from-hunter-brown to-hunter-brown-light flex items-center justify-center">
-              <div className="text-center text-white z-10">
-                <h3 className="text-4xl font-bold mb-2">Askiy Ridge</h3>
-                <p className="text-xl text-hunter-tan">Alberta's Breathtaking Wilderness</p>
-              </div>
-              <div className="absolute inset-0 bg-black opacity-30"></div>
-            </div>
-            <div className="p-8">
-              <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-                <div>
-                  <h4 className="text-lg font-semibold text-orange-500 mb-3">Reserve Stats</h4>
-                  <div className="space-y-2">
-                    <div className="flex justify-between text-sm">
-                      <span className="text-gray-400">Size:</span>
-                      <span className="text-hunter-tan">25 km²</span>
-                    </div>
-                    <div className="flex justify-between text-sm">
-                      <span className="text-gray-400">Animals:</span>
-                      <span className="text-hunter-tan">19 Species</span>
-                    </div>
-                    <div className="flex justify-between text-sm">
-                      <span className="text-gray-400">Difficulty:</span>
-                      <span className="text-orange-500">Expert Challenge</span>
-                    </div>
-                  </div>
-                </div>
-                <div>
-                  <h4 className="text-lg font-semibold text-orange-500 mb-3">Featured Species</h4>
-                  <div className="space-y-2">
-                    <div className="flex items-center">
-                      <span className="text-orange-500 mr-2">•</span>
-                      <span className="text-gray-300">Grizzly Bear (Class 9)</span>
-                    </div>
-                    <div className="flex items-center">
-                      <span className="text-orange-500 mr-2">•</span>
-                      <span className="text-gray-300">Moose (Class 7)</span>
-                    </div>
-                    <div className="flex items-center">
-                      <span className="text-orange-500 mr-2">•</span>
-                      <span className="text-gray-300">Elk (Class 6)</span>
-                    </div>
-                  </div>
-                </div>
-                <div>
-                  <h4 className="text-lg font-semibold text-orange-500 mb-3">Why Hunt Here?</h4>
-                  <p className="text-gray-300 text-sm leading-relaxed">
-                    Experience the newest and most challenging reserve! Face dangerous Grizzly Bears, hunt massive Moose, and explore Alberta's stunning snowy wilderness with 19 species and exclusive missions.
-                  </p>
-                  <Link
-                    to="/reserves/askiy-ridge"
-                    className="inline-block mt-4 px-4 py-2 bg-orange-500 text-white rounded hover:bg-orange-600 transition-colors duration-200 text-sm"
-                  >
-                    Explore Reserve
-                  </Link>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
+        <FeaturedReserve
+          name="Askiy Ridge"
+          subtitle="Alberta's Breathtaking Wilderness"
+          size="25 km²"
+          animalCount={19}
+          difficulty="Expert Challenge"
+          featuredSpecies={[
+            "Grizzly Bear (Class 9)",
+            "Moose (Class 7)",
+            "Elk (Class 6)"
+          ]}
+          description="Experience the newest and most challenging reserve! Face dangerous Grizzly Bears, hunt massive Moose, and explore Alberta's stunning snowy wilderness with 19 species and exclusive missions."
+          reserveId="askiy-ridge"
+        />
 
         {/* About This Project */}
         <section className="mt-16 text-center">
@@ -177,12 +152,14 @@ function Home() {
             student. The goal is to provide a more structured, aesthetic, and informative
             resource than existing wikis.
           </p>
+          {/* GitHub Repository Link */}
           <Link
             to="https://github.com/AleksanderAsoy/TheHunterCOTW-Guide"
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center px-6 py-3 bg-orange-500 text-white rounded-lg hover:bg-orange-600 transition-colors duration-200"
+            className={CSS_CLASSES.primaryButtonLarge}
           >
+            {/* GitHub Icon */}
             <svg
               className="w-5 h-5 mr-2"
               fill="currentColor"
@@ -203,4 +180,3 @@ function Home() {
 }
 
 export default Home;
-

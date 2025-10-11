@@ -1,11 +1,32 @@
+/**
+ * Footer Component
+ * 
+ * Site footer with copyright information and external links.
+ * Features:
+ * - Copyright notice with current year
+ * - Disclaimer about unofficial fan-made guide
+ * - Link to Avalanche Studios (game developer)
+ * - Link to GitHub repository
+ * - Link to official fandom wiki
+ * 
+ * Layout: Responsive flex design (stacked on mobile, side-by-side on desktop)
+ */
+
+import { CSS_CLASSES } from '../utils/constants';
+
 function Footer() {
+  // Get current year automatically for copyright
+  const currentYear = new Date().getFullYear();
+
   return (
     <footer className="bg-hunter-darker mt-auto py-8">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex flex-col md:flex-row justify-between items-center">
+          
+          {/* Left Side: Copyright and Disclaimer */}
           <div className="text-gray-400 text-sm mb-4 md:mb-0">
             <p>
-              &copy; {new Date().getFullYear()} TheHunter: COTW Unofficial Guide
+              &copy; {currentYear} TheHunter: COTW Unofficial Guide
             </p>
             <p className="mt-1">
               This is an unofficial fan-made guide. All rights to the game belong to{' '}
@@ -13,7 +34,7 @@ function Footer() {
                 href="https://www.avalanchestudios.com/"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-orange-500 hover:text-hunter-tan transition-colors"
+                className={CSS_CLASSES.textLink}
               >
                 Avalanche Studios
               </a>
@@ -21,7 +42,10 @@ function Footer() {
             </p>
           </div>
 
+          {/* Right Side: External Links */}
           <div className="flex space-x-6">
+            
+            {/* GitHub Repository Link */}
             <a
               href="https://github.com/AleksanderAsoy/TheHunterCOTW-Guide"
               target="_blank"
@@ -29,6 +53,7 @@ function Footer() {
               className="text-gray-400 hover:text-orange-500 transition-colors"
               aria-label="GitHub Repository"
             >
+              {/* GitHub Icon SVG */}
               <svg
                 className="h-6 w-6"
                 fill="currentColor"
@@ -41,11 +66,13 @@ function Footer() {
                 />
               </svg>
             </a>
+
+            {/* Official Wiki Link */}
             <a
               href="https://thehuntercotw.fandom.com/wiki/TheHunter:_Call_of_the_Wild_Wiki"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-gray-400 hover:text-hunter-green-light transition-colors text-sm flex items-center"
+              className="text-gray-400 hover:text-orange-500 transition-colors text-sm flex items-center"
             >
               Official Wiki
             </a>
@@ -57,4 +84,3 @@ function Footer() {
 }
 
 export default Footer;
-
