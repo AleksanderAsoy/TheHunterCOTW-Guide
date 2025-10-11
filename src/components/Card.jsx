@@ -2,7 +2,7 @@ import { Link } from 'react-router-dom';
 
 function Card({ title, description, link, badge, details, image }) {
   return (
-    <div className="bg-hunter-dark rounded-lg shadow-lg overflow-hidden hover:shadow-2xl transition-shadow duration-300 border border-hunter-brown flex flex-col h-full">
+    <div className="bg-hunter-cream rounded-lg shadow-lg overflow-hidden hover:shadow-2xl transition-shadow duration-300 border border-hunter-beige flex flex-col h-full">
       {image && (
         <div className="relative h-48 overflow-hidden">
           <img 
@@ -20,7 +20,7 @@ function Card({ title, description, link, badge, details, image }) {
       )}
       <div className="p-6 flex flex-col flex-grow">
         <div className="flex justify-between items-start mb-3">
-          <h3 className="text-xl font-bold text-hunter-tan flex-1 pr-2">{title}</h3>
+          <h3 className="text-xl font-bold text-hunter-dark flex-1 pr-2">{title}</h3>
           {!image && badge && (
             <span className="px-3 py-1 text-xs font-semibold rounded-full bg-orange-500 text-white whitespace-nowrap flex-shrink-0">
               {badge}
@@ -28,12 +28,12 @@ function Card({ title, description, link, badge, details, image }) {
           )}
         </div>
         
-        <p className="text-gray-300 mb-4 line-clamp-3">{description}</p>
+        <p className="text-gray-700 mb-4 line-clamp-3">{description}</p>
         
         {details && details.length > 0 && (
           <div className="space-y-2 mb-4">
             {details.map((detail, index) => (
-              <div key={index} className="flex items-center text-sm text-gray-400">
+              <div key={index} className="flex items-center text-sm text-gray-600">
                 <span className="mr-2 text-orange-500">•</span>
                 {detail}
               </div>

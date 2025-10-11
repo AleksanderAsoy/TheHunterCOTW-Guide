@@ -19,6 +19,10 @@ export default {
           orange: '#d48434',
           'orange-light': '#e6994d',
           'orange-dark': '#b86f2a',
+          // Add lighter colors for cards
+          cream: '#f5f1e8',
+          'cream-dark': '#e8dfc8',
+          beige: '#d9c9a8',
         },
       },
     },
