@@ -8,8 +8,7 @@
     "weight_range": "120-250 kg",
     "reserves": ["Hirschfelden"],
     "difficulty": "Medium",
-    "recommended_weapons": [".243", ".270", ".308", "7mm"],
-    "image": "https://images.unsplash.com/photo-1551892374-ecf8845dd9b5?w=800&q=80"
+    "recommended_weapons": [".243", ".270", ".308", "7mm"]
   },
   {
     "id": "roe-deer",
@@ -20,8 +19,7 @@
     "weight_range": "15-35 kg",
     "reserves": ["Hirschfelden"],
     "difficulty": "Easy",
-    "recommended_weapons": [".223", ".243", "Crossbow"],
-    "image": "https://images.unsplash.com/photo-1594490087218-9a1f8e1e0b3e?w=800&q=80"
+    "recommended_weapons": [".223", ".243", "Crossbow"]
   },
   {
     "id": "fallow-deer",
@@ -32,8 +30,7 @@
     "weight_range": "40-100 kg",
     "reserves": ["Hirschfelden"],
     "difficulty": "Easy",
-    "recommended_weapons": [".223", ".243", ".270"],
-    "image": "https://images.unsplash.com/photo-1568700942090-19dc36fab0c4?w=800&q=80"
+    "recommended_weapons": [".223", ".243", ".270"]
   },
   {
     "id": "wild-boar",
@@ -44,8 +41,7 @@
     "weight_range": "50-200 kg",
     "reserves": ["Hirschfelden", "Medved-Taiga"],
     "difficulty": "Medium",
-    "recommended_weapons": [".243", ".270", ".308", "Shotgun"],
-    "image": "https://images.unsplash.com/photo-1617075683133-c1b0e279de52?w=800&q=80"
+    "recommended_weapons": [".243", ".270", ".308", "Shotgun"]
   },
   {
     "id": "european-hare",
@@ -68,8 +64,7 @@
     "weight_range": "1.5-2.5 kg",
     "reserves": ["Hirschfelden"],
     "difficulty": "Easy",
-    "recommended_weapons": [".22", ".17 HMR", "Shotgun"],
-    "image": "https://images.unsplash.com/photo-1585110396000-c9ffd4e4b308?w=800&q=80"
+    "recommended_weapons": [".22", ".17 HMR", "Shotgun"]
   },
   {
     "id": "red-fox",
@@ -80,8 +75,7 @@
     "weight_range": "4-9 kg",
     "reserves": ["Hirschfelden"],
     "difficulty": "Medium",
-    "recommended_weapons": [".22", ".223", ".17 HMR"],
-    "image": "https://images.unsplash.com/photo-1474511320723-9a56873867b5?w=800&q=80"
+    "recommended_weapons": [".22", ".223", ".17 HMR"]
   },
   {
     "id": "european-bison",
@@ -92,8 +86,7 @@
     "weight_range": "400-920 kg",
     "reserves": ["Hirschfelden"],
     "difficulty": "Very Hard",
-    "recommended_weapons": [".300", ".338", ".45-70", ".470"],
-    "image": "https://images.unsplash.com/photo-1556817411-31c200ee9c0d?w=800&q=80"
+    "recommended_weapons": [".300", ".338", ".45-70", ".470"]
   },
   {
     "id": "ring-necked-pheasant",
@@ -104,8 +97,7 @@
     "weight_range": "1-1.5 kg",
     "reserves": ["Hirschfelden"],
     "difficulty": "Easy",
-    "recommended_weapons": ["Shotgun", ".22"],
-    "image": "https://images.unsplash.com/photo-1568429608784-7886d36f3c75?w=800&q=80"
+    "recommended_weapons": ["Shotgun", ".22"]
   },
   {
     "id": "mallard",
@@ -116,8 +108,7 @@
     "weight_range": "0.7-1.6 kg",
     "reserves": ["Hirschfelden", "Layton Lake District"],
     "difficulty": "Easy",
-    "recommended_weapons": ["Shotgun"],
-    "image": "https://images.unsplash.com/photo-1549366021-9f761d450615?w=800&q=80"
+    "recommended_weapons": ["Shotgun"]
   },
   {
     "id": "greylag-goose",
@@ -128,8 +119,7 @@
     "weight_range": "2.5-4.5 kg",
     "reserves": ["Hirschfelden"],
     "difficulty": "Medium",
-    "recommended_weapons": ["Shotgun"],
-    "image": "https://images.unsplash.com/photo-1592150621744-aca64f48394a?w=800&q=80"
+    "recommended_weapons": ["Shotgun"]
   },
   {
     "id": "roosevelt-elk",
@@ -140,8 +130,7 @@
     "weight_range": "240-500 kg",
     "reserves": ["Layton Lake District"],
     "difficulty": "Hard",
-    "recommended_weapons": [".300", "7mm", ".338"],
-    "image": "https://images.unsplash.com/photo-1544735716-392fe2489ffa?w=800&q=80"
+    "recommended_weapons": [".300", "7mm", ".338"]
   },
   {
     "id": "blacktail-deer",
@@ -152,8 +141,7 @@
     "weight_range": "50-90 kg",
     "reserves": ["Layton Lake District"],
     "difficulty": "Easy",
-    "recommended_weapons": [".223", ".243", ".270"],
-    "image": "https://images.unsplash.com/photo-1612540585863-0b11a9dd5bee?w=800&q=80"
+    "recommended_weapons": [".223", ".243", ".270"]
   },
   {
     "id": "whitetail-deer",
@@ -164,8 +152,7 @@
     "weight_range": "40-140 kg",
     "reserves": ["Layton Lake District"],
     "difficulty": "Medium",
-    "recommended_weapons": [".243", ".270", ".308"],
-    "image": "https://images.unsplash.com/photo-1551892374-ecf8845dd9b5?w=800&q=80"
+    "recommended_weapons": [".243", ".270", ".308"]
   },
   {
     "id": "black-bear",
@@ -176,8 +163,7 @@
     "weight_range": "40-250 kg",
     "reserves": ["Layton Lake District"],
     "difficulty": "Hard",
-    "recommended_weapons": [".300", ".338", "7mm", ".45-70"],
-    "image": "https://images.unsplash.com/photo-1589656966895-2f33e7653819?w=800&q=80"
+    "recommended_weapons": [".300", ".338", "7mm", ".45-70"]
   },
   {
     "id": "coyote",
@@ -188,8 +174,7 @@
     "weight_range": "9-16 kg",
     "reserves": ["Layton Lake District"],
     "difficulty": "Medium",
-    "recommended_weapons": [".223", ".243", ".22"],
-    "image": "https://images.unsplash.com/photo-1585508889851-760b542d1f57?w=800&q=80"
+    "recommended_weapons": [".223", ".243", ".22"]
   },
   {
     "id": "canada-goose",
@@ -200,8 +185,7 @@
     "weight_range": "3-6.5 kg",
     "reserves": ["Layton Lake District"],
     "difficulty": "Medium",
-    "recommended_weapons": ["Shotgun"],
-    "image": "https://images.unsplash.com/photo-1559827260-dc66d52bef19?w=800&q=80"
+    "recommended_weapons": ["Shotgun"]
   },
   {
     "id": "merriam-turkey",
@@ -212,8 +196,7 @@
     "weight_range": "5-10 kg",
     "reserves": ["Layton Lake District"],
     "difficulty": "Hard",
-    "recommended_weapons": ["Shotgun", "Bow"],
-    "image": "https://images.unsplash.com/photo-1605283176568-9b41fde0e2da?w=800&q=80"
+    "recommended_weapons": ["Shotgun", "Bow"]
   },
   {
     "id": "harlequin-duck",
@@ -224,8 +207,7 @@
     "weight_range": "0.5-0.8 kg",
     "reserves": ["Layton Lake District"],
     "difficulty": "Medium",
-    "recommended_weapons": ["Shotgun"],
-    "image": "https://images.unsplash.com/photo-1549366021-9f761d450615?w=800&q=80"
+    "recommended_weapons": ["Shotgun"]
   },
   {
     "id": "brown-bear",
@@ -236,8 +218,7 @@
     "weight_range": "200-600 kg",
     "reserves": ["Medved-Taiga"],
     "difficulty": "Very Hard",
-    "recommended_weapons": [".300", ".338", ".45-70", ".470"],
-    "image": "https://images.unsplash.com/photo-1589656966895-2f33e7653819?w=800&q=80"
+    "recommended_weapons": [".300", ".338", ".45-70", ".470"]
   },
   {
     "id": "eurasian-lynx",
@@ -248,8 +229,7 @@
     "weight_range": "18-30 kg",
     "reserves": ["Medved-Taiga"],
     "difficulty": "Hard",
-    "recommended_weapons": [".223", ".243", ".270"],
-    "image": "https://images.unsplash.com/photo-1612540982165-d3c1fc7eeb76?w=800&q=80"
+    "recommended_weapons": [".223", ".243", ".270"]
   },
   {
     "id": "moose",
@@ -260,8 +240,7 @@
     "weight_range": "200-700 kg",
     "reserves": ["Medved-Taiga"],
     "difficulty": "Hard",
-    "recommended_weapons": [".300", ".338", "7mm"],
-    "image": "https://images.unsplash.com/photo-1550402537-6f7b7a648082?w=800&q=80"
+    "recommended_weapons": [".300", ".338", "7mm"]
   },
   {
     "id": "reindeer",
@@ -272,8 +251,7 @@
     "weight_range": "80-180 kg",
     "reserves": ["Medved-Taiga"],
     "difficulty": "Medium",
-    "recommended_weapons": [".270", ".308", "7mm"],
-    "image": "https://images.unsplash.com/photo-1514996937319-344454492b37?w=800&q=80"
+    "recommended_weapons": [".270", ".308", "7mm"]
   },
   {
     "id": "eurasian-wigeon",
@@ -284,8 +262,7 @@
     "weight_range": "0.5-1 kg",
     "reserves": ["Medved-Taiga"],
     "difficulty": "Easy",
-    "recommended_weapons": ["Shotgun"],
-    "image": "https://images.unsplash.com/photo-1549366021-9f761d450615?w=800&q=80"
+    "recommended_weapons": ["Shotgun"]
   },
   {
     "id": "black-grouse",
@@ -296,8 +273,7 @@
     "weight_range": "1-1.5 kg",
     "reserves": ["Medved-Taiga"],
     "difficulty": "Medium",
-    "recommended_weapons": ["Shotgun", ".22"],
-    "image": "https://images.unsplash.com/photo-1568429608784-7886d36f3c75?w=800&q=80"
+    "recommended_weapons": ["Shotgun", ".22"]
   },
   {
     "id": "hazel-grouse",
@@ -308,8 +284,7 @@
     "weight_range": "0.3-0.5 kg",
     "reserves": ["Medved-Taiga"],
     "difficulty": "Medium",
-    "recommended_weapons": ["Shotgun", ".22"],
-    "image": "https://images.unsplash.com/photo-1568429608784-7886d36f3c75?w=800&q=80"
+    "recommended_weapons": ["Shotgun", ".22"]
   },
   {
     "id": "tundra-bean-goose",
@@ -320,8 +295,7 @@
     "weight_range": "2-4 kg",
     "reserves": ["Medved-Taiga"],
     "difficulty": "Medium",
-    "recommended_weapons": ["Shotgun"],
-    "image": "https://images.unsplash.com/photo-1592150621744-aca64f48394a?w=800&q=80"
+    "recommended_weapons": ["Shotgun"]
   },
   {
     "id": "eurasian-teal",
@@ -332,7 +306,6 @@
     "weight_range": "0.2-0.4 kg",
     "reserves": ["Medved-Taiga"],
     "difficulty": "Easy",
-    "recommended_weapons": ["Shotgun"],
-    "image": "https://images.unsplash.com/photo-1549366021-9f761d450615?w=800&q=80"
+    "recommended_weapons": ["Shotgun"]
   }
 ]
