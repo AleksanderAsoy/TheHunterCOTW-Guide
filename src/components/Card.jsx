@@ -12,7 +12,7 @@ function Card({ title, description, link, badge, details, image }) {
             loading="lazy"
           />
           {badge && (
-            <span className="absolute top-3 right-3 px-3 py-1 text-xs font-semibold rounded-full bg-hunter-green text-white shadow-lg">
+            <span className="absolute top-3 right-3 px-3 py-1 text-xs font-semibold rounded-full bg-orange-500 text-white shadow-lg">
               {badge}
             </span>
           )}
@@ -22,7 +22,7 @@ function Card({ title, description, link, badge, details, image }) {
         <div className="flex justify-between items-start mb-3">
           <h3 className="text-xl font-bold text-hunter-tan flex-1 pr-2">{title}</h3>
           {!image && badge && (
-            <span className="px-3 py-1 text-xs font-semibold rounded-full bg-hunter-green text-white whitespace-nowrap flex-shrink-0">
+            <span className="px-3 py-1 text-xs font-semibold rounded-full bg-orange-500 text-white whitespace-nowrap flex-shrink-0">
               {badge}
             </span>
           )}
@@ -34,7 +34,7 @@ function Card({ title, description, link, badge, details, image }) {
           <div className="space-y-2 mb-4">
             {details.map((detail, index) => (
               <div key={index} className="flex items-center text-sm text-gray-400">
-                <span className="mr-2 text-hunter-green-light">•</span>
+                <span className="mr-2 text-orange-500">•</span>
                 {detail}
               </div>
             ))}
@@ -44,7 +44,7 @@ function Card({ title, description, link, badge, details, image }) {
         {link && (
           <Link
             to={link}
-            className="inline-block mt-auto px-4 py-2 bg-hunter-green-light text-white rounded hover:bg-hunter-green transition-colors duration-200"
+            className="inline-block mt-auto px-4 py-2 bg-orange-500 text-white rounded hover:bg-orange-600 transition-colors duration-200"
           >
             Learn More
           </Link>

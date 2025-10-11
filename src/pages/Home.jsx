@@ -64,7 +64,7 @@ function Home() {
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             <div>
-              <h3 className="text-xl font-semibold text-hunter-green-light mb-3">
+              <h3 className="text-xl font-semibold text-orange-500 mb-3">
                 Track Carefully
               </h3>
               <p className="text-gray-300">
@@ -73,7 +73,7 @@ function Home() {
               </p>
             </div>
             <div>
-              <h3 className="text-xl font-semibold text-hunter-green-light mb-3">
+              <h3 className="text-xl font-semibold text-orange-500 mb-3">
                 Mind the Wind
               </h3>
               <p className="text-gray-300">
@@ -82,7 +82,7 @@ function Home() {
               </p>
             </div>
             <div>
-              <h3 className="text-xl font-semibold text-hunter-green-light mb-3">
+              <h3 className="text-xl font-semibold text-orange-500 mb-3">
                 Choose the Right Weapon
               </h3>
               <p className="text-gray-300">
@@ -91,7 +91,7 @@ function Home() {
               </p>
             </div>
             <div>
-              <h3 className="text-xl font-semibold text-hunter-green-light mb-3">
+              <h3 className="text-xl font-semibold text-orange-500 mb-3">
                 Learn Need Zones
               </h3>
               <p className="text-gray-300">
@@ -116,7 +116,7 @@ function Home() {
             to="https://github.com/AleksanderAsoy/TheHunterCOTW-Guide"
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center px-6 py-3 bg-hunter-green-light text-white rounded-lg hover:bg-hunter-green transition-colors duration-200"
+            className="inline-flex items-center px-6 py-3 bg-orange-500 text-white rounded-lg hover:bg-orange-600 transition-colors duration-200"
           >
             <svg
               className="w-5 h-5 mr-2"

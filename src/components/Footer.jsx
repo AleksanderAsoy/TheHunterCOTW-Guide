@@ -13,7 +13,7 @@ function Footer() {
                 href="https://www.avalanchestudios.com/"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-hunter-green-light hover:text-hunter-tan transition-colors"
+                className="text-orange-500 hover:text-hunter-tan transition-colors"
               >
                 Avalanche Studios
               </a>
@@ -26,7 +26,7 @@ function Footer() {
               href="https://github.com/AleksanderAsoy/TheHunterCOTW-Guide"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-gray-400 hover:text-hunter-green-light transition-colors"
+              className="text-gray-400 hover:text-orange-500 transition-colors"
               aria-label="GitHub Repository"
             >
               <svg

@@ -14,7 +14,7 @@ function Weapons() {
         <section className="bg-hunter-dark rounded-lg p-12 border border-hunter-brown text-center">
           <div className="max-w-2xl mx-auto">
             <svg
-              className="w-24 h-24 mx-auto mb-6 text-hunter-green-light"
+              className="w-24 h-24 mx-auto mb-6 text-orange-500"
               fill="none"
               strokeLinecap="round"
               strokeLinejoin="round"
@@ -33,27 +33,27 @@ function Weapons() {
             </p>
             <ul className="text-left text-gray-300 space-y-3 mb-8">
               <li className="flex items-center">
-                <span className="text-hunter-green-light mr-3">✓</span>
+                <span className="text-orange-500 mr-3">✓</span>
                 Complete rifle catalog with caliber specifications
               </li>
               <li className="flex items-center">
-                <span className="text-hunter-green-light mr-3">✓</span>
+                <span className="text-orange-500 mr-3">✓</span>
                 Shotgun varieties and ammunition types
               </li>
               <li className="flex items-center">
-                <span className="text-hunter-green-light mr-3">✓</span>
+                <span className="text-orange-500 mr-3">✓</span>
                 Bow and crossbow options
               </li>
               <li className="flex items-center">
-                <span className="text-hunter-green-light mr-3">✓</span>
+                <span className="text-orange-500 mr-3">✓</span>
                 Handguns and revolvers
               </li>
               <li className="flex items-center">
-                <span className="text-hunter-green-light mr-3">✓</span>
+                <span className="text-orange-500 mr-3">✓</span>
                 Weapon recommendations by animal class
               </li>
               <li className="flex items-center">
-                <span className="text-hunter-green-light mr-3">✓</span>
+                <span className="text-orange-500 mr-3">✓</span>
                 Sight and scope comparisons
               </li>
             </ul>

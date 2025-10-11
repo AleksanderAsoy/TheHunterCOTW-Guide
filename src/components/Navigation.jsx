@@ -10,7 +10,7 @@ function Navigation() {
         <div className="flex justify-between items-center h-16">
           {/* Logo */}
           <Link to="/" className="flex items-center space-x-2">
-            <span className="text-2xl font-bold text-hunter-green-light">
+            <span className="text-2xl font-bold text-orange-500">
               TheHunter
             </span>
             <span className="text-2xl font-bold text-hunter-tan">
@@ -22,25 +22,25 @@ function Navigation() {
           <div className="hidden md:flex space-x-8">
             <Link
               to="/"
-              className="text-gray-300 hover:text-hunter-green-light transition-colors duration-200 font-medium"
+              className="text-gray-300 hover:text-orange-500 transition-colors duration-200 font-medium"
             >
               Home
             </Link>
             <Link
               to="/reserves"
-              className="text-gray-300 hover:text-hunter-green-light transition-colors duration-200 font-medium"
+              className="text-gray-300 hover:text-orange-500 transition-colors duration-200 font-medium"
             >
               Reserves
             </Link>
             <Link
               to="/animals"
-              className="text-gray-300 hover:text-hunter-green-light transition-colors duration-200 font-medium"
+              className="text-gray-300 hover:text-orange-500 transition-colors duration-200 font-medium"
             >
               Animals
             </Link>
             <Link
               to="/weapons"
-              className="text-gray-300 hover:text-hunter-green-light transition-colors duration-200 font-medium"
+              className="text-gray-300 hover:text-orange-500 transition-colors duration-200 font-medium"
             >
               Weapons
             </Link>
@@ -49,7 +49,7 @@ function Navigation() {
           {/* Mobile menu button */}
           <button
             onClick={() => setIsMenuOpen(!isMenuOpen)}
-            className="md:hidden text-gray-300 hover:text-hunter-green-light focus:outline-none"
+            className="md:hidden text-gray-300 hover:text-orange-500 focus:outline-none"
           >
             <svg
               className="h-6 w-6"
@@ -74,28 +74,28 @@ function Navigation() {
           <div className="md:hidden pb-4">
             <Link
               to="/"
-              className="block py-2 text-gray-300 hover:text-hunter-green-light transition-colors duration-200"
+              className="block py-2 text-gray-300 hover:text-orange-500 transition-colors duration-200"
               onClick={() => setIsMenuOpen(false)}
             >
               Home
             </Link>
             <Link
               to="/reserves"
-              className="block py-2 text-gray-300 hover:text-hunter-green-light transition-colors duration-200"
+              className="block py-2 text-gray-300 hover:text-orange-500 transition-colors duration-200"
               onClick={() => setIsMenuOpen(false)}
             >
               Reserves
             </Link>
             <Link
               to="/animals"
-              className="block py-2 text-gray-300 hover:text-hunter-green-light transition-colors duration-200"
+              className="block py-2 text-gray-300 hover:text-orange-500 transition-colors duration-200"
               onClick={() => setIsMenuOpen(false)}
             >
               Animals
             </Link>
             <Link
               to="/weapons"
-              className="block py-2 text-gray-300 hover:text-hunter-green-light transition-colors duration-200"
+              className="block py-2 text-gray-300 hover:text-orange-500 transition-colors duration-200"
               onClick={() => setIsMenuOpen(false)}
             >
               Weapons

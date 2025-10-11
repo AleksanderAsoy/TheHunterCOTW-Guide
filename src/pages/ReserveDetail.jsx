@@ -21,7 +21,7 @@ function ReserveDetail() {
           </h2>
           <Link
             to="/reserves"
-            className="text-hunter-green-light hover:text-hunter-tan transition-colors"
+            className="text-orange-500 hover:text-hunter-tan transition-colors"
           >
             Back to Reserves
           </Link>
@@ -57,7 +57,7 @@ function ReserveDetail() {
         <Hero
           title={reserve.name}
           subtitle={reserve.location}
-          backgroundClass="bg-gradient-to-r from-hunter-green to-hunter-brown"
+          backgroundClass="bg-gradient-to-r from-orange-500 to-orange-600"
         />
       )}
 
@@ -65,7 +65,7 @@ function ReserveDetail() {
         {/* Back Button */}
         <Link
           to="/reserves"
-          className="inline-flex items-center text-hunter-green-light hover:text-hunter-tan transition-colors mb-8"
+          className="inline-flex items-center text-orange-500 hover:text-hunter-tan transition-colors mb-8"
         >
           <svg
             className="w-5 h-5 mr-2"
@@ -103,7 +103,7 @@ function ReserveDetail() {
                     key={index}
                     className="flex items-center p-3 bg-hunter-darker rounded-lg"
                   >
-                    <span className="text-hunter-green-light mr-3 text-xl">•</span>
+                    <span className="text-orange-500 mr-3 text-xl">•</span>
                     <span className="text-gray-300">{species}</span>
                   </div>
                 ))}

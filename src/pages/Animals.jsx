@@ -43,7 +43,7 @@ function Animals() {
               onClick={() => setSelectedClass('all')}
               className={`px-4 py-2 rounded-lg font-medium transition-colors duration-200 ${
                 selectedClass === 'all'
-                  ? 'bg-hunter-green-light text-white'
+                  ? 'bg-orange-500 text-white'
                   : 'bg-hunter-dark text-gray-300 hover:bg-hunter-brown'
               }`}
             >
@@ -55,7 +55,7 @@ function Animals() {
                 onClick={() => setSelectedClass(classNum.toString())}
                 className={`px-4 py-2 rounded-lg font-medium transition-colors duration-200 ${
                   selectedClass === classNum.toString()
-                    ? 'bg-hunter-green-light text-white'
+                    ? 'bg-orange-500 text-white'
                     : 'bg-hunter-dark text-gray-300 hover:bg-hunter-brown'
                 }`}
               >
@@ -97,7 +97,7 @@ function Animals() {
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             <div>
-              <h3 className="text-xl font-semibold text-hunter-green-light mb-3">
+              <h3 className="text-xl font-semibold text-orange-500 mb-3">
                 Small Game (Class 1-3)
               </h3>
               <p className="text-gray-300">
@@ -106,7 +106,7 @@ function Animals() {
               </p>
             </div>
             <div>
-              <h3 className="text-xl font-semibold text-hunter-green-light mb-3">
+              <h3 className="text-xl font-semibold text-orange-500 mb-3">
                 Medium Game (Class 4-6)
               </h3>
               <p className="text-gray-300">
@@ -115,7 +115,7 @@ function Animals() {
               </p>
             </div>
             <div>
-              <h3 className="text-xl font-semibold text-hunter-green-light mb-3">
+              <h3 className="text-xl font-semibold text-orange-500 mb-3">
                 Large Game (Class 7-9)
               </h3>
               <p className="text-gray-300">
