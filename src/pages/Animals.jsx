@@ -24,6 +24,7 @@ function Animals() {
       <Hero
         title="Wildlife Guide"
         subtitle="Master the hunt with detailed information on over 100 species"
+        backgroundClass="bg-gradient-to-r from-hunter-orange via-hunter-orange-light to-hunter-orange-dark"
       />
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
