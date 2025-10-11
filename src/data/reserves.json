@@ -61,5 +61,279 @@
       "Eurasian Teal"
     ],
     "dlc_required": true
+  },
+  {
+    "id": "vurhonga-savanna",
+    "name": "Vurhonga Savanna Reserve",
+    "location": "South Africa",
+    "description": "Representing the South African savannah, Vurhonga offers vast open plains and acacia woodlands. Experience authentic African hunting with diverse wildlife roaming the golden grasslands under the African sun.",
+    "size": "25 km²",
+    "terrain": "Savannah, grasslands, acacia woodlands",
+    "featured_species": [
+      "African Buffalo",
+      "Blue Wildebeest",
+      "Gemsbok",
+      "Greater Kudu",
+      "Plains Bison",
+      "Scrub Hare",
+      "Side-Striped Jackal",
+      "Springbok",
+      "Warthog"
+    ],
+    "dlc_required": true
+  },
+  {
+    "id": "parque-fernando",
+    "name": "Parque Fernando",
+    "location": "South America",
+    "description": "Modeled after South American forests, Parque Fernando features lush rainforests and dense vegetation. Hunt unique South American species in this vibrant and challenging jungle environment.",
+    "size": "25 km²",
+    "terrain": "Rainforest, jungle, rivers",
+    "featured_species": [
+      "Axis Deer",
+      "Blackbuck",
+      "Collared Peccary",
+      "Feral Goat",
+      "Feral Pig",
+      "Gray Brocket Deer",
+      "Red Brocket Deer",
+      "Water Buffalo"
+    ],
+    "dlc_required": true
+  },
+  {
+    "id": "yukon-valley",
+    "name": "Yukon Valley",
+    "location": "Alaska, USA",
+    "description": "Based on Alaska's fall season with light snow, Yukon Valley offers stunning autumn landscapes. Hunt North American big game through golden forests and rugged mountains in this breathtaking northern wilderness.",
+    "size": "25 km²",
+    "terrain": "Mountains, tundra, forests",
+    "featured_species": [
+      "American Black Bear",
+      "Caribou",
+      "Dall Sheep",
+      "Gray Wolf",
+      "Grizzly Bear",
+      "Mountain Goat",
+      "Moose",
+      "Plains Bison"
+    ],
+    "dlc_required": true
+  },
+  {
+    "id": "cuatro-colinas",
+    "name": "Cuatro Colinas Game Reserve",
+    "location": "Spain",
+    "description": "Inspired by Spain's corn fields and hills, Cuatro Colinas features Mediterranean landscapes with rolling hills and agricultural areas. Perfect for hunting European species in a warm, sunny climate.",
+    "size": "25 km²",
+    "terrain": "Hills, cornfields, Mediterranean vegetation",
+    "featured_species": [
+      "Beceite Ibex",
+      "European Rabbit",
+      "Gredos Ibex",
+      "Red Deer",
+      "Roe Deer",
+      "Ronda Ibex",
+      "Southeastern Spanish Ibex",
+      "Wild Boar"
+    ],
+    "dlc_required": true
+  },
+  {
+    "id": "silver-ridge-peaks",
+    "name": "Silver Ridge Peaks",
+    "location": "Rocky Mountains, USA",
+    "description": "Modeled after the Rocky Mountains, Silver Ridge Peaks offers dramatic alpine scenery with high peaks and valleys. Challenge yourself with long-range shots and high-altitude hunting in this majestic mountain reserve.",
+    "size": "25 km²",
+    "terrain": "Mountains, alpine meadows, forests",
+    "featured_species": [
+      "Bighorn Sheep",
+      "Rocky Mountain Elk",
+      "Mountain Lion",
+      "Mule Deer",
+      "Pronghorn Antelope",
+      "American Black Bear",
+      "Merriam's Turkey",
+      "Mountain Goat"
+    ],
+    "dlc_required": true
+  },
+  {
+    "id": "te-awaroa",
+    "name": "Te Awaroa National Park",
+    "location": "New Zealand",
+    "description": "Based on New Zealand's tall mountains and long coasts, Te Awaroa features stunning Pacific landscapes. Hunt unique introduced species in this beautiful island reserve with diverse terrain from beaches to peaks.",
+    "size": "25 km²",
+    "terrain": "Mountains, coastline, forests",
+    "featured_species": [
+      "Chamois",
+      "Fallow Deer",
+      "Feral Goat",
+      "Feral Pig",
+      "Red Deer",
+      "Rusa Deer",
+      "Sika Deer",
+      "Wild Turkey"
+    ],
+    "dlc_required": true
+  },
+  {
+    "id": "rancho-del-arroyo",
+    "name": "Rancho del Arroyo",
+    "location": "Mexico",
+    "description": "Representing Mexico's hilly landscape and jagged terrain, Rancho del Arroyo features arid deserts and rocky canyons. Experience authentic Mexican hunting in this challenging and beautiful reserve.",
+    "size": "25 km²",
+    "terrain": "Desert, canyons, scrubland",
+    "featured_species": [
+      "Antelope Jackrabbit",
+      "Collared Peccary",
+      "Coyote",
+      "Desert Bighorn Sheep",
+      "Mexican Bobcat",
+      "Mule Deer",
+      "Pronghorn",
+      "Rio Grande Turkey"
+    ],
+    "dlc_required": true
+  },
+  {
+    "id": "mississippi-acres",
+    "name": "Mississippi Acres Preserve",
+    "location": "Southern USA",
+    "description": "Located in the swamps of the southern United States, Mississippi Acres features wetlands, bayous, and dense forests. Perfect for waterfowl and whitetail hunting in classic southern hunting grounds.",
+    "size": "25 km²",
+    "terrain": "Swamps, wetlands, hardwood forests",
+    "featured_species": [
+      "Alligator",
+      "American Alligator",
+      "Eastern Wild Turkey",
+      "Feral Pig",
+      "Raccoon",
+      "Whitetail Deer",
+      "Wood Duck",
+      "Various Waterfowl"
+    ],
+    "dlc_required": true
+  },
+  {
+    "id": "revontuli-coast",
+    "name": "Revontuli Coast",
+    "location": "Finland",
+    "description": "Based on Finland's cold mossy forests and big lakes, Revontuli Coast offers Nordic hunting in pristine wilderness. Experience northern European hunting with stunning aurora-lit landscapes and diverse boreal wildlife.",
+    "size": "25 km²",
+    "terrain": "Boreal forests, lakes, coastline",
+    "featured_species": [
+      "Brown Bear",
+      "Eurasian Lynx",
+      "Moose",
+      "Reindeer",
+      "Western Capercaillie",
+      "Wild Boar",
+      "Wolf",
+      "Various Waterfowl"
+    ],
+    "dlc_required": true
+  },
+  {
+    "id": "new-england-mountains",
+    "name": "New England Mountains",
+    "location": "New England, USA",
+    "description": "Inspired by the states of the US in the New England region, this reserve features classic northeastern forests with colorful fall foliage. Hunt traditional New England game through hardwood forests and mountain ridges.",
+    "size": "25 km²",
+    "terrain": "Deciduous forests, mountains",
+    "featured_species": [
+      "American Black Bear",
+      "Canada Goose",
+      "Eastern Wild Turkey",
+      "Moose",
+      "Ruffed Grouse",
+      "Snowshoe Hare",
+      "White-Tailed Deer",
+      "Wood Duck"
+    ],
+    "dlc_required": true
+  },
+  {
+    "id": "emerald-coast",
+    "name": "Emerald Coast",
+    "location": "Australia",
+    "description": "Based on the Australian coast and thick bushy forests, Emerald Coast features unique Australian wildlife. Experience hunting down under with exotic species in diverse habitats from coastal areas to dense bush.",
+    "size": "25 km²",
+    "terrain": "Coastal areas, bush, eucalyptus forests",
+    "featured_species": [
+      "Banteng",
+      "Fallow Deer",
+      "Feral Goat",
+      "Feral Pig",
+      "Hog Deer",
+      "Magpie Goose",
+      "Red Deer",
+      "Sambar Deer",
+      "Scrub Hare",
+      "Stubble Quail",
+      "Water Buffalo"
+    ],
+    "dlc_required": true
+  },
+  {
+    "id": "sundarpatan",
+    "name": "Sundarpatan",
+    "location": "Nepal",
+    "description": "Located in Nepal's swampy lowlands and tall snowy mountains, Sundarpatan offers dramatic elevation changes. Hunt Asian species from subtropical lowlands to Himalayan peaks in this stunning and diverse reserve.",
+    "size": "25 km²",
+    "terrain": "Mountains, lowlands, subtropical forests",
+    "featured_species": [
+      "Asian Water Buffalo",
+      "Axis Deer",
+      "Blackbuck",
+      "Four-Horned Antelope",
+      "Himalayan Tahr",
+      "Indian Hare",
+      "Muntjac",
+      "Nilgai",
+      "Wild Boar"
+    ],
+    "dlc_required": true
+  },
+  {
+    "id": "salzwiesen-park",
+    "name": "Salzwiesen Park",
+    "location": "North Germany",
+    "description": "Representing north German wetlands, Salzwiesen Park features coastal marshes and tidal flats. A compact reserve perfect for waterfowl hunting and experiencing the unique wildlife of the North Sea coast.",
+    "size": "10 km²",
+    "terrain": "Wetlands, marshes, coastal areas",
+    "featured_species": [
+      "European Hare",
+      "Red Deer",
+      "Red Fox",
+      "Roe Deer",
+      "Wild Boar",
+      "Various Waterfowl",
+      "Eurasian Wigeon",
+      "Greylag Goose"
+    ],
+    "dlc_required": true
+  },
+  {
+    "id": "askiy-ridge",
+    "name": "Askiy Ridge Hunting Preserve",
+    "location": "Alberta, Canada",
+    "description": "Located in Alberta, Canada, Askiy Ridge features bitterly cold yet stunning snowy wilderness. This newest reserve offers 19 local species and 13 exclusive missions in breathtaking Albertan landscapes.",
+    "size": "25 km²",
+    "terrain": "Snowy forests, mountains, frozen lakes",
+    "featured_species": [
+      "American Black Bear",
+      "Canada Goose",
+      "Caribou",
+      "Coyote",
+      "Elk",
+      "Gray Wolf",
+      "Grizzly Bear",
+      "Moose",
+      "Mountain Goat",
+      "Mule Deer",
+      "White-Tailed Deer"
+    ],
+    "dlc_required": true
   }
 ]
