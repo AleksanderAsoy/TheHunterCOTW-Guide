@@ -6,7 +6,7 @@ function Hero({ title, subtitle, backgroundClass = "bg-gradient-to-r from-orange
           {title}
         </h1>
         {subtitle && (
-          <p className="text-xl md:text-2xl text-hunter-tan max-w-3xl mx-auto">
+          <p className="text-xl md:text-2xl text-gray-100 max-w-3xl mx-auto">
             {subtitle}
           </p>
         )}
