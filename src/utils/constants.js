@@ -56,5 +56,6 @@ export const NAV_LINKS = [
   { path: "/reserves", label: "Reserves" },
   { path: "/animals", label: "Animals" },
   { path: "/weapons", label: "Weapons" },
+  { path: "/profile", label: "Profile" },
 ];
 

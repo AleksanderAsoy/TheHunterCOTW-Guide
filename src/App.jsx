@@ -9,6 +9,7 @@
  * - /reserves/:id : Individual reserve detail page
  * - /animals : List of all animals
  * - /weapons : Weapons page (coming soon)
+ * - /profile : Profile page with harvest tracking (coming soon)
  * 
  * Layout Structure:
  * - Navigation (sticky header)
@@ -26,6 +27,7 @@ import Reserves from './pages/Reserves';
 import ReserveDetail from './pages/ReserveDetail';
 import Animals from './pages/Animals';
 import Weapons from './pages/Weapons';
+import Profile from './pages/Profile';
 
 function App() {
   return (
@@ -45,6 +47,7 @@ function App() {
             <Route path="/reserves/:id" element={<ReserveDetail />} />
             <Route path="/animals" element={<Animals />} />
             <Route path="/weapons" element={<Weapons />} />
+            <Route path="/profile" element={<Profile />} />
           </Routes>
         </main>
         

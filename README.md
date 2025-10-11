@@ -173,7 +173,7 @@ This is an **unofficial** fan-made guide. All rights to "TheHunter: Call of the 
 
 ## 👤 Author
 
-**Aleksander Åsøy**
+**Aleksander Æsøy**
 
 - GitHub: [@AleksanderAsoy](https://github.com/AleksanderAsoy)
 - Project: [TheHunterCOTW-Guide](https://github.com/AleksanderAsoy/TheHunterCOTW-Guide)
