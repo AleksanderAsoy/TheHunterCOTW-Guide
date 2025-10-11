@@ -16,7 +16,7 @@ function Reserves() {
       <Hero
         title="Hunting Reserves"
         subtitle="Explore 17 unique reserves from around the world"
-        backgroundClass="bg-gradient-to-r from-hunter-orange via-hunter-orange-light to-hunter-orange-dark"
+        backgroundClass="bg-hunter-orange"
       />
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
