@@ -9,6 +9,7 @@
  * - Overview with full description
  * - Quick Facts sidebar (size, terrain, DLC status)
  * - Featured species list
+ * - Diamond Trophy Tracker (checkboxes to track diamond achievements)
  * - Back button to return to reserves list
  * 
  * If reserve is not found, shows a 404-style error message.
@@ -17,6 +18,7 @@
 import { useParams, Link } from 'react-router-dom';
 import { useState, useEffect } from 'react';
 import Hero from '../components/Hero';
+import DiamondTracker from '../components/DiamondTracker';
 import reservesData from '../data/reserves.json';
 import { CSS_CLASSES } from '../utils/constants';
 
@@ -179,6 +181,16 @@ function ReserveDetail() {
               ))}
             </div>
           </section>
+        )}
+
+        {/* Diamond Trophy Tracker Section */}
+        {reserve.featured_species && reserve.featured_species.length > 0 && (
+          <div className="mt-8">
+            <DiamondTracker 
+              reserveId={reserve.id}
+              species={reserve.featured_species}
+            />
+          </div>
         )}
       </div>
     </div>
