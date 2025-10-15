@@ -23,6 +23,9 @@ function DiamondTracker({ reserveId, species }) {
   // State to track which species have diamond trophies
   const [diamondSpecies, setDiamondSpecies] = useState(new Set());
 
+  // Track if component has loaded initial data to prevent overwriting
+  const [hasLoaded, setHasLoaded] = useState(false);
+
   // Load saved diamond data from localStorage when component mounts
   useEffect(() => {
     const savedData = localStorage.getItem(`diamonds_${reserveId}`);
@@ -34,13 +37,16 @@ function DiamondTracker({ reserveId, species }) {
         console.error('Error loading diamond data:', error);
       }
     }
+    setHasLoaded(true);
   }, [reserveId]);
 
-  // Save diamond data to localStorage whenever it changes
+  // Save diamond data to localStorage whenever it changes (but only after initial load)
   useEffect(() => {
-    const dataToSave = Array.from(diamondSpecies);
-    localStorage.setItem(`diamonds_${reserveId}`, JSON.stringify(dataToSave));
-  }, [diamondSpecies, reserveId]);
+    if (hasLoaded) {
+      const dataToSave = Array.from(diamondSpecies);
+      localStorage.setItem(`diamonds_${reserveId}`, JSON.stringify(dataToSave));
+    }
+  }, [diamondSpecies, reserveId, hasLoaded]);
 
   /**
    * Toggle diamond status for a specific species
